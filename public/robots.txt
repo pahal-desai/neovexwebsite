@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neovexwebsite.vercel.app/sitemap.xml
+Sitemap: https://neovex.vercel.app/sitemap.xml
