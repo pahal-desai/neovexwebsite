@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/neovexwebsite/',
+  // Empty config since Vercel automatically handles root paths
 });
