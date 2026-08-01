@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/neovexwebsite/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neovex | The Browser for the Obsessive</title>
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <script type="module" crossorigin src="/neovexwebsite/assets/index-C-RxwURW.js"></script>
+  <link rel="stylesheet" crossorigin href="/neovexwebsite/assets/index-COln7OGR.css">
+</head>
+<body>
+  <!-- WebGL Background -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <div id="app">
+    <!-- Custom Cursor & Effects -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav" data-magnetic-target>
+      <div class="logo">
+        <img src="/neovexwebsite/favicon.png" alt="Neovex Logo" class="logo-img" />
+        <span class="logo-text">Neovex</span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link" data-magnetic>Overview</a>
+        <a href="#features" class="nav-link" data-magnetic>Architecture</a>
+        <a href="#performance" class="nav-link" data-magnetic>Performance</a>
+      </div>
+      <div class="nav-actions" style="display: flex; gap: 1rem;">
+        <a href="https://github.com/NeovexBrowser/Neovex" class="cta-button" data-magnetic style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;" target="_blank">
+          <span class="btn-text">GitHub</span>
+        </a>
+        <a href="mailto:neovexbrowser@gmail.com" class="cta-button" data-magnetic style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+          <span class="btn-text">Contact</span>
+        </a>
+        <a href="https://github.com/NeovexBrowser/Neovex/releases/latest/download/mini_installer.exe" class="cta-button primary-btn" data-magnetic style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+          <span class="btn-text">Download</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Smooth Scroll Wrapper -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        
+        <!-- Section: Hero (Cinematic Browser Mockup) -->
+        <section class="hero" id="hero">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <div class="line-wrap"><span class="line">Engineered</span></div>
+              <div class="line-wrap"><span class="line">for <span class="highlight">obsession.</span></span></div>
+            </h1>
+            <p class="hero-subtitle line-wrap"><span class="line">The browser that belongs in 2032.</span></p>
+          </div>
+          
+          <div class="perspective-container">
+            <div class="browser-mockup" id="browser-mockup">
+              <!-- Glass Backdrop -->
+              <div class="browser-bg glass-panel"></div>
+              
+              <!-- Browser UI (Elevated in 3D) -->
+              <div class="browser-header layer-1">
+                <div class="window-controls">
+                  <div class="dot close"></div>
+                  <div class="dot minimize"></div>
+                  <div class="dot maximize"></div>
+                </div>
+                <div class="tabs">
+                  <div class="tab active layer-2">
+                    <img src="/neovexwebsite/favicon.png" class="tab-icon" />
+                    <span>Neovex</span>
+                  </div>
+                  <div class="tab inactive">
+                    <span>Performance</span>
+                  </div>
+                </div>
+                <div class="address-bar layer-2">
+                  <span class="lock-icon"></span>
+                  <span class="url">neovex.dev</span>
+                </div>
+              </div>
+              
+              <div class="browser-content layer-1">
+                <div class="content-header layer-2">
+                  <h2>Memory safe. Hyper-fast.</h2>
+                </div>
+                <div class="mockup-cards">
+                  <div class="mockup-card glass-panel layer-3">
+                    <div class="card-title">Built-in Ad Blocking</div>
+                    <div class="card-bar"></div>
+                  </div>
+                  <div class="mockup-card glass-panel layer-3">
+                    <div class="card-title">Study Mode</div>
+                    <div class="card-bar"></div>
+                  </div>
+                  <div class="mockup-card glass-panel layer-3">
+                    <div class="card-title">Privacy-first defaults</div>
+                    <div class="card-bar"></div>
+                  </div>
+                  <div class="mockup-card glass-panel layer-3">
+                    <div class="card-title">Optimized Chromium Build</div>
+                    <div class="card-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Architecture (Exploded View) -->
+        <section class="architecture" id="features">
+          <div class="arch-text">
+            <h2 class="section-title">The Architecture of Speed</h2>
+            <p class="section-desc">Every process isolated. Every frame budgeted. A masterclass in C++ orchestration.</p>
+          </div>
+          <div class="arch-visual-container">
+            <div class="arch-visual">
+              <div class="arch-layer ui-thread glass-panel" data-speed="1.2">
+                <span>Browser Process</span>
+                <div class="layer-details">Coordinates UI, Network & Storage</div>
+              </div>
+              <div class="arch-layer gpu-thread glass-panel" data-speed="1.4">
+                <span>GPU Process</span>
+                <div class="layer-details">Hardware-accelerated Compositing</div>
+              </div>
+              <div class="arch-layer render-thread glass-panel" data-speed="1.6">
+                <span>Render Process</span>
+                <div class="layer-details">Isolated Blink & V8 Engine</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Features Grid -->
+        <section class="performance" id="performance">
+          <h2 class="section-title text-center">Uncompromising.</h2>
+          <div class="feature-grid">
+            <div class="feature-box glass-panel tilt-card">
+              <h3 class="feature-title">Zero Telemetry</h3>
+              <p class="feature-desc">We don't want your data. Background bloat is stripped out completely.</p>
+              <div class="glow-orb"></div>
+            </div>
+            <div class="feature-box glass-panel tilt-card">
+              <h3 class="feature-title">Native Integration</h3>
+              <p class="feature-desc">Compiled directly for your OS. It feels like a native app, because it is.</p>
+              <div class="glow-orb"></div>
+            </div>
+            <div class="feature-box glass-panel tilt-card">
+              <h3 class="feature-title">Advanced DevTools</h3>
+              <p class="feature-desc">Built by engineers, for engineers. Deep profiling tools included.</p>
+              <div class="glow-orb"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Final CTA -->
+        <section class="final-cta">
+          <h2 class="cta-title">Experience Neovex.</h2>
+          <div class="cta-group" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+            <a href="https://github.com/NeovexBrowser/Neovex/releases/latest/download/mini_installer.exe" class="cta-button primary-btn large" data-magnetic style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+              <span class="btn-text">Download for Windows</span>
+            </a>
+            <a href="https://github.com/NeovexBrowser/Neovex" class="cta-button large" data-magnetic style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;" target="_blank">
+              <span class="btn-text">GitHub Source</span>
+            </a>
+            <a href="mailto:neovexbrowser@gmail.com" class="cta-button large" data-magnetic style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+              <span class="btn-text">Contact Us</span>
+            </a>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>© 2026 Neovex. The Browser for the Obsessive.</p>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
